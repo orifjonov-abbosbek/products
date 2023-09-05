@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="">
+                <input class="searchIinput" id="searchInput" type="text">
+                <button class="searchBtn" id="searchBtn">Search</button>
+            </div>
+            <div class="select">
+                <select name="" id="select">
+                    <option selected  value="">select category</option>
+                </select>
+            </div>
+            <button class="cart_icon">
+                <div id="cart-icon" class="cart_icon">
+                    <p class="bookmark"><svg fill="#3584e4" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"
+                            stroke="#3584e4">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M1585.963 1920 960.48 1544.711 335 1920V170.586C335 76.536 411.536 0 505.586 0h909.79c94.05 0 170.587 76.536 170.587 170.586V1920Z"
+                                    fill-rule="evenodd"></path>
+                            </g>
+                        </svg></p>
+                    <span id="cart-count">0</span>
+                </div>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="products">
+            <div class="container">
+                <div class="products_wrapper" id="productsWrapper">
+                </div>
+                <div class="pagination" id="pagination"></div>
+                <div id="cartModal" class="modal">
+                    <div class="modal_content">
+                        <h2>Bookmark</h2>
+                        <span class="close">&times;</span>
+                        <ul class="cartItemsList" id="cartItemsList">
+                        </ul>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
